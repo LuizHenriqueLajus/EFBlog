@@ -17,6 +17,7 @@ var app = builder.Build();
 LoadConfiguration(app);
 app.UseAuthentication();
 app.UseAuthorization();
+app.UseResponseCompression();
 app.UseStaticFiles();
 app.MapControllers();
 app.Run();
